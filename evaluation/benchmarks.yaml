@@ -1,0 +1,16 @@
+benchmarks:
+  - id: fix-failing-test
+    objective: Diagnose and fix the known failing test in this fixture.
+    status: planned
+  - id: small-feature
+    objective: Implement a narrowly scoped feature with tests.
+    status: planned
+  - id: refactor
+    objective: Refactor a selected module without changing behavior.
+    status: planned
+  - id: bug-fix
+    objective: Reproduce and fix a documented defect.
+    status: planned
+  - id: test-coverage
+    objective: Add tests for a specified untested behavior.
+    status: planned

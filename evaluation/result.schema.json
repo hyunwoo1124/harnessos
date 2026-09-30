@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": ["benchmark", "runtime", "provider", "model", "mode", "success", "iterations", "duration_seconds", "tests_passed", "verification_passed", "failure_category", "estimated_cost"],
+  "properties": {
+    "benchmark": {"type": "string"}, "runtime": {"type": "string"},
+    "provider": {"type": "string"}, "model": {"type": "string"},
+    "mode": {"enum": ["standalone", "harnessos"]}, "success": {"type": "boolean"},
+    "iterations": {"type": "integer", "minimum": 0}, "duration_seconds": {"type": "number", "minimum": 0},
+    "tests_passed": {"type": "boolean"}, "verification_passed": {"type": "boolean"},
+    "failure_category": {"type": ["string", "null"]}, "estimated_cost": {"type": ["number", "null"]}
+  }
+}

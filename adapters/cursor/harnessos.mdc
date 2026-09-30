@@ -1,0 +1,8 @@
+---
+description: Shared HarnessOS engineering contract
+alwaysApply: true
+---
+
+@AGENTS.md
+
+Follow the shared HarnessOS engineering contract in the repository's AGENTS.md. Respect project-specific rules, clarify materially ambiguous objectives, use relevant skills, run documented checks, and report observed evidence accurately.

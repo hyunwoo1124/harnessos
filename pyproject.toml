@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harnessos"
+version = "0.2.0"
+description = "Repository-level instructions and skills for coding agents"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.6,<3", "PyYAML>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+harness = "harnessos.cli:main"
+harnessos = "harnessos.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+harnessos = ["defaults/*.yaml", "defaults/providers/*.json", "defaults/instructions/*.md", "defaults/adapters/cursor/*.mdc", "defaults/skills/*/*.md"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

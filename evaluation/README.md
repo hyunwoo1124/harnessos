@@ -1,0 +1,3 @@
+# Evaluation methodology
+
+Run each benchmark against standalone OpenCode and HarnessOS with matching runtime/provider/model and repository snapshots. Record one JSONL row per run using `result.schema.json`. Report success only when the benchmark's declared test command and independent verifier both pass. Preserve the task trajectory and categorize failures as reasoning, context, tool execution, behavior, handoff, transition, verification, or termination. Repeat each run and compare completion rate, test result, iterations, elapsed time, recovery rate, and estimated cost. Do not claim a provider comparison until both configured paths have actually been run.

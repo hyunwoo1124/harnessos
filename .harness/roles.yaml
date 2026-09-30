@@ -1,0 +1,7 @@
+roles:
+  explorer: {runtime: opencode}
+  architect: {runtime: opencode}
+  implementer: {runtime: opencode}
+  reviewer: {runtime: opencode}
+  tester: {runtime: opencode}
+  verifier: {runtime: opencode}
